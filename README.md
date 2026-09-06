@@ -19,3 +19,25 @@ The script:
 - Avoids overwriting existing files.
 - Uses DeepL for Japanese -> English translation.
 """
+"""
+Japanese -> English file translator
+
+Usage:
+    python translator.py "C:\\path\\to\\input.txt"
+
+Requirements:
+    pip install deepl
+(
+API key:
+    Set the DEEPL_API_KEY environment variable.
+
+Windows PowerShell:
+    $env:DEEPL_API_KEY="your_api_key"
+[System.Environment]::SetEnvironmentVariable("MY_VARIABLE", "MyValue", "User")
+) i don't want to use env vari so i directly set the vari in code
+The script:
+- Detects UTF-8 / UTF-8 BOM / CP932 (Windows Japanese) / Shift-JIS.
+- Translates text in chunks so large files do not become one huge API request.
+- Writes <original_name>_translated.txt beside the input file.
+
+"""
