@@ -19,6 +19,10 @@ The script:
 - Avoids overwriting existing files.
 - Uses DeepL for Japanese -> English translation.
 """
+
+
+
+
 """
 Japanese -> English file translator
 
