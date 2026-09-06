@@ -108,7 +108,7 @@ def split_text(text: str, max_chars: int = MAX_CHARS_PER_REQUEST) -> list[str]:
 
 def translate_file(input_path: Path, api_key: str = "add your API key here") -> Path:
     text, detected_encoding = read_text_auto(input_path)
-    chunks = split_text(text)
+    chunks = split_text(text,16000)
 
     print(f"Input encoding: {detected_encoding}")
     print(f"Characters: {len(text):,}")
