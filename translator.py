@@ -13,7 +13,7 @@ API key:
 
 Windows PowerShell:
     $env:DEEPL_API_KEY="your_api_key"
-
+[System.Environment]::SetEnvironmentVariable("MY_VARIABLE", "MyValue", "User")
 The script:
 - Detects UTF-8 / UTF-8 BOM / CP932 (Windows Japanese) / Shift-JIS.
 - Translates text in chunks so large files do not become one huge API request.
