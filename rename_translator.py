@@ -136,14 +136,8 @@ def main() -> int:
         print(f"Error: path not found: {path}", file=sys.stderr)
         return 1
 
-    api_key = os.environ.get("DEEPL_API_KEY")
-    if not api_key:
-        print(
-            "Error: DEEPL_API_KEY environment variable is not set. using default api key for testing. Please set your own key for production use.",
-            file=sys.stderr
-        )
-        api_key="add your own key here"
-        return 1
+    api_key = "add your own key here"
+  
 
     try:
         files = collect_files(path)
