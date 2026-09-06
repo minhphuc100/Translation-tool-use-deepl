@@ -158,15 +158,8 @@ def main() -> int:
         print(f"Error: file not found: {input_path}", file=sys.stderr)
         return 1
 
-    api_key = os.environ.get("DEEPL_API_KEY")
-    if not api_key:
-        print(
-            "Error: DEEPL_API_KEY environment variable not set.",
-            file=sys.stderr,
-            
-        )
-        api_key = "add your API key here"
-        return 1
+    api_key = "add your API key here"
+        
 
     try:
         output_path = translate_file(input_path, api_key)
