@@ -10,7 +10,7 @@ Requirements:
     pip install deepl
 
 API key:
-    Set DEEPL_API_KEY in your environment.
+    Set DEEPL_API_KEY
 
 The script:
 - Accepts a single file or a directory.
